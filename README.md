@@ -107,9 +107,3 @@ Toàn bộ kết quả được in ra màn hình và lưu trong thư mục `resu
 **So với cực trị đếm quan sát (cửa sổ 100 mốc = toàn đoạn):** đoạn A quan sát max = 75 tại phút 63,37 và min = 5 tại phút 38,92; đoạn B quan sát max = 12 tại phút 4,12 và min = 0 tại phút 43,18. Giá trị của đường xu thế lệch nhiều so với các mốc cực trị này (xem `results/sensitivity.csv`), vì đa thức bậc 2/3 không đi qua các mốc đỉnh nhọn.
 
 **Độ nhạy theo cỡ cửa sổ (80, 100) và bậc (2, 3):** vị trí cực trị của mô hình thay đổi khi đổi cửa sổ hoặc bậc. Ví dụ ở đoạn A bậc 3, cực đại toàn đoạn nằm trong miền (s = 0,859) với cửa sổ 80 nhưng ở biên phải với cửa sổ 100. Chi tiết xem `results/sensitivity.csv`.
-
-### 6. Giới hạn cần lưu ý
-
-- Nhãn dữ liệu là `unreviewed_prelabel` (chưa rà soát), nên các kết luận về cực trị chỉ có giá trị chạy thử.
-- Mỗi đoạn chỉ có 100 quan sát nên cửa sổ khảo sát độ nhạy chỉ gồm 80 và 100 mốc (cửa sổ phải từ 80 mốc trở lên theo yêu cầu 80–300 quan sát).
-- Chương trình xác định (không dùng ngẫu nhiên); `np.random.seed(2026)` được đặt để đúng yêu cầu khung code.
