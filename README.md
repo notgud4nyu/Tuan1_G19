@@ -20,7 +20,6 @@ Dữ liệu lấy từ `analysis_snapshot.csv` (200 dòng, 22 cột) của bộ 
 | `total_count` nhỏ nhất / lớn nhất | 5 / 75 | 0 / 12 |
 | Trạng thái nhãn | unreviewed_prelabel | unreviewed_prelabel |
 
-**Lưu ý:**
 
 - Hai đoạn có nhãn chưa được rà soát và nghiệm thu, chỉ dùng để chạy thử chương trình, không xem là dữ liệu đã xác minh chính thức.
 - Chương trình **không tái lấy mẫu** dữ liệu: cột `is_resampled` của cả 200 dòng đều là `False`, các mốc cách nhau không đều (24–74 giây).
